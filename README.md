@@ -36,11 +36,13 @@ Config ini berbeda karena:
 ## Berkas dalam repositori
 
 - `SOUL.md` — Pondasi nilai dan prinsip program
-- `demos/` — 10 ide demo yang siap dipakai di kelas
-- `personas/` — System prompt untuk 3 mode "Partner Belajar"
+- `personas/` — System prompt untuk 3 mode "Partner Belajar" (Socratic Mentor, Code Reviewer, Sparring Partner)
+- `safety/` — Guardrails + Python pre-check untuk blokir konten berbahaya
+- `configs/` — Template konfigurasi default per-kegiatan
+- `prompts/` — 12 starter prompt siap pakai untuk 4 level siswa
+- `demos/` — Script demo siap pakai di kelas
 - `scripts/` — Installer dan automation tool
-- `pitch/` — Materi promosi dan talking points
-- `logistics/` — Checklist persiapan dan operasional
+- `docs/` — Dokumentasi penggunaan (use cases, dll)
 
 ## Cara berkontribusi
 
@@ -51,6 +53,21 @@ Kami terbuka untuk:
 - Developer yang mau bantu refine prompt & installer
 
 Lihat `SOUL.md` dulu sebelum kasih ide. Ide harus selaras dengan prinsip di sana.
+
+## Yang Bisa Siswa Lakukan dengan Hermes
+
+Setelah terinstall, siswa punya partner belajar yang bisa dipakai kapan aja. Lihat **[docs/student-use-cases.md](docs/student-use-cases.md)** untuk 10 use case keren:
+
+- **Stuck Solver** — debug bareng AI tanpa malu
+- **Pseudo-code Diary** — latihan berpikir tiap pagi
+- **Code Review** — feedback jujur sebelum submit
+- **Project Pribadi** — diskusi design dengan AI
+- **From Scratch Challenge** — buktikan bisa tanpa AI
+- **Bug Hunt Tournament** — lomba cari bug
+- **Landing Page 1 Jam** — web dev praktis
+- **Cek Data** — Python untuk data science
+- **Cybersecurity Konsep** — belajar defensif (lihat `safety/`)
+- **Portofolio Online** — siap kerja
 
 ## Status
 
