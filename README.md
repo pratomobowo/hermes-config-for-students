@@ -1,6 +1,6 @@
-# NextSkill Roadshow
+# Hermes Config for Students
 
-Roadshow ke sekolah-sekolah SMK yang memperkenalkan AI sebagai **partner belajar**, bukan jalan pintas coding.
+Config ke sekolah-sekolah SMK yang memperkenalkan AI sebagai **partner belajar**, bukan jalan pintas coding.
 
 ## Apa yang dilakukan program ini
 
@@ -16,16 +16,16 @@ Program ini mengunjungi sekolah SMK selama 60-90 menit. Setiap siswa mendapat ke
 - Guru informatika yang ingin update metode ajar
 - Sekolah yang serius memikirkan masa depan siswanya di era AI
 
-## Yang berbeda dari roadshow coding biasa
+## Yang berbeda dari config coding biasa
 
-Kebanyakan roadshow coding berakhir dengan:
+Kebanyakan config coding berakhir dengan:
 - Anak kagum 5 menit
 - Lupa besok
 - Tidak ada follow-up
 
-Roadshow ini berbeda karena:
+Config ini berbeda karena:
 
-| Aspek | Roadshow Biasa | NextSkill Roadshow |
+| Aspek | Config Biasa | Hermes Config for Students |
 |---|---|---|
 | Siapa yang pegang AI | Pemateri saja | Setiap anak pegang sendiri |
 | Berapa menit hands-on | 0-5 menit | 40-60 menit |

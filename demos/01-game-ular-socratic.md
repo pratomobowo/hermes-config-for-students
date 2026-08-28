@@ -30,7 +30,7 @@
 hermes --version
 
 # Load persona Socratic Mentor
-hermes --profile roadshow --persona socratic-mentor chat
+hermes --profile kegiatan --persona socratic-mentor chat
 ```
 
 Pastikan welcome message muncul:

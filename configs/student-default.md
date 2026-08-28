@@ -1,17 +1,17 @@
-# Konfigurasi Default Hermes untuk Roadshow
+# Konfigurasi Default Hermes untuk Students
 
-> File ini adalah template konfigurasi yang di-load saat roadshow.
+> File ini adalah template konfigurasi yang di-load saat students.
 > Tujuannya: setiap sekolah dapat setup konsisten tanpa setup manual per-laptop.
 
-## File: `configs/roadshow-default.yaml`
+## File: `configs/students-default.yaml`
 
 ```yaml
-# Konfigurasi ini di-load sebagai default untuk mode roadshow
-# Taruh di ~/.hermes/profiles/roadshow/config.yaml
+# Konfigurasi ini di-load sebagai default untuk mode students
+# Taruh di ~/.hermes/profiles/students/config.yaml
 
 profile:
-  name: "roadshow"
-  description: "Konfigurasi untuk roadshow NextSkill ke SMK"
+  name: "students"
+  description: "Konfigurasi untuk konfigurasi Hermes untuk siswa ke SMK"
   
 # Model
 model:
@@ -44,7 +44,7 @@ shared_rules:
   # Logging untuk review guru
   logging:
     enabled: true
-    path: "/var/hermes-home/safety-logs/roadshow/"
+    path: "/var/hermes-home/safety-logs/students/"
     rotation: "daily"
     include_summaries: true
 
@@ -53,11 +53,11 @@ safety:
   enabled: true
   config_path: "safety/guardrails.md"
   
-  # Khusus roadshow: 
+  # Khusus students: 
   require_guru_approval: false  # False karena kita yang pegang laptop
   show_safety_blocks: true      # Tampilin ke siswa kalau diblokir
 
-# TUI/Dashboard customization untuk roadshow
+# TUI/Dashboard customization untuk students
 ui:
   welcome_message: |
     👋 Hai! Aku Hermes, partner belajar kamu hari ini.
@@ -79,7 +79,7 @@ ui:
     - "Aku bingung mulai dari mana"
     - "Jelasin pake analogi yang simpel"
 
-# Limit per siswa (untuk roadshow)
+# Limit per siswa (untuk students)
 session_limits:
   max_duration_minutes: 90
   reminder_at_minutes: 75  # "Waktu tinggal 15 menit"
@@ -108,13 +108,13 @@ Setiap sekolah bisa di-customize tanpa ganti konfigurasi global:
 
 ```bash
 # Untuk SMK A yang fokus ke web dev
-hermes --profile roadshow --system "$(cat personas/socratic-mentor.md)"
+hermes --profile students --system "$(cat personas/socratic-mentor.md)"
 
 # Untuk SMK B yang fokus ke data science
-hermes --profile roadshow --system "$(cat configs/persona-data-science.md)"
+hermes --profile students --system "$(cat configs/persona-data-science.md)"
 
 # Untuk universitas yang lebih advance
-hermes --profile roadshow --system "$(cat personas/sparring-partner.md)"
+hermes --profile students --system "$(cat personas/sparring-partner.md)"
 ```
 
 ## Default Quick Prompts
@@ -153,14 +153,14 @@ set -e
 echo "👋 Welcome to Hermes, Partner Belajar!"
 
 # 1. Copy default config
-mkdir -p ~/.hermes/profiles/roadshow/
-cp configs/roadshow-default.yaml ~/.hermes/profiles/roadshow/config.yaml
+mkdir -p ~/.hermes/profiles/students/
+cp configs/students-default.yaml ~/.hermes/profiles/students/config.yaml
 
 # 2. Setup logging
-mkdir -p /var/hermes-home/safety-logs/roadshow/
+mkdir -p /var/hermes-home/safety-logs/students/
 
 # 3. Pre-load personas
-cp personas/*.md ~/.hermes/profiles/roadshow/personas/
+cp personas/*.md ~/.hermes/profiles/students/personas/
 
 # 4. Test koneksi ke 9router
 if curl -s --max-time 5 http://localhost:8181/health > /dev/null; then
@@ -170,7 +170,7 @@ else
 fi
 
 # 5. Tampilin welcome screen
-hermes --profile roadshow chat --first-run
+hermes --profile students chat --first-run
 ```
 
 ## Verifikasi Setup
@@ -179,13 +179,13 @@ Setelah install, test dengan:
 
 ```bash
 # Cek persona aktif
-hermes --profile roadshow status
+hermes --profile students status
 
 # Test quick prompt
-hermes --profile roadshow chat "Halo"
+hermes --profile students chat "Halo"
 
 # Cek logging
-hermes --profile roadshow logs --tail 5
+hermes --profile students logs --tail 5
 ```
 
 Output yang diharapkan:
@@ -199,4 +199,4 @@ Output yang diharapkan:
 - Backup konfigurasi per-sekolah agar tidak tertimpa
 - Update safety rules tiap 3 bulan
 - Monitor log size, rotate kalau > 1GB
-- Test semua persona sebelum roadshow
+- Test semua persona sebelum students

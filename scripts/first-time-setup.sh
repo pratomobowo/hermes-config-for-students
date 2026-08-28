@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# First-time setup script untuk installer roadshow di laptop siswa
+# First-time setup script untuk installer students di laptop siswa
 # Usage: ./first-time-setup.sh
 
 set -e
 
 HERMES_DIR="$HOME/.hermes"
-PROFILE_DIR="$HERMES_DIR/profiles/roadshow"
-LOG_DIR="/var/hermes-home/safety-logs/roadshow"
+PROFILE_DIR="$HERMES_DIR/profiles/students"
+LOG_DIR="/var/hermes-home/safety-logs/students"
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 echo ""
@@ -43,7 +43,7 @@ echo "   - sparring-partner.md"
 
 # 4. Copy default config
 echo "📦 Installing default config..."
-cp "$PROJECT_DIR/configs/roadshow-default.md" "$PROFILE_DIR/config.md"
+cp "$PROJECT_DIR/configs/students-default.md" "$PROFILE_DIR/config.md"
 
 # 5. Install safety check script
 echo "📦 Installing safety check..."
@@ -72,10 +72,10 @@ echo "  ✅ Setup selesai!"
 echo "============================================="
 echo ""
 echo "Cara menjalankan:"
-echo "  hermes --profile roadshow chat"
+echo "  hermes --profile students chat"
 echo ""
 echo "Atau pake shortcut:"
-echo "  hermes-roadshow"
+echo "  hermes-students"
 echo ""
 echo "Default persona: Socratic Mentor"
 echo "Default bahasa: Indonesia casual"

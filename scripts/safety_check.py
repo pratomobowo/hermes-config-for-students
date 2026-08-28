@@ -142,7 +142,7 @@ def check_prompt(text: str) -> dict:
 
 def log_check(text: str, result: dict) -> None:
     """Log hasil check ke file untuk review guru."""
-    log_dir = Path("/var/hermes-home/safety-logs/roadshow/")
+    log_dir = Path("/var/hermes-home/safety-logs/students/")
     log_dir.mkdir(parents=True, exist_ok=True)
     log_file = log_dir / "checks.log"
     

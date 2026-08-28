@@ -1,6 +1,6 @@
-# SOUL — NextSkill Roadshow
+# SOUL — Hermes Config for Students
 
-> Dokumen pondasi ini adalah kompas moral dan strategis roadshow NextSkill ke sekolah-sekolah SMK.
+> Dokumen pondasi ini adalah kompas moral dan strategis konfigurasi Hermes untuk siswa ke sekolah-sekolah SMK.
 > Bukan dokumen teknis. Bukan pitch deck. Ini jiwa acara.
 
 ## Masalah yang kami jawab
@@ -31,7 +31,7 @@ Anak SMK yang lulus dari NextSkill bukan anak yang jago prompting. Mereka adalah
 4. **Gagal adalah bagian dari belajar.** Demo yang gagal di depan kelas lebih berharga daripada demo yang sempurna.
 5. **Guru tetap manusia utama.** AI memfasilitasi. Guru memutuskan.
 
-## Untuk siapa roadshow ini
+## Untuk siapa program ini
 
 Siswa SMK kejuruan RPL/PPLG dan kampus IT tahun pertama yang:
 
@@ -39,7 +39,7 @@ Siswa SMK kejuruan RPL/PPLG dan kampus IT tahun pertama yang:
 - Penasaran tapi takut ketinggalan.
 - Ingin tahu skill apa yang relevan 5 tahun ke depan.
 
-## Untuk siapa roadshow ini BUKAN
+## Untuk siapa program ini BUKAN
 
 - Bukan untuk anak yang sudah mahir coding dan AI. Mereka tidak butuh basic.
 - Bukan untuk anak yang anti-teknologi. Mereka akan lebih cocok dengan ekskul lain.
@@ -49,7 +49,7 @@ Siswa SMK kejuruan RPL/PPLG dan kampus IT tahun pertama yang:
 
 - Setiap sesi 60-90 menit, dengan 70% hands-on.
 - Anak-anak pegang AI langsung di laptop mereka.
-- Setelah roadshow, anak-anak bisa install dan pakai AI partner belajar di rumah.
+- Setelah program, anak-anak bisa install dan pakai AI partner belajar di rumah.
 - Kami tidak jualan janji. Kami tunjukkan produknya hidup.
 
 ## Janji sekolah ke kami (timbal balik)
@@ -78,7 +78,7 @@ Kami tidak sukses kalau:
 
 Kami sukses kalau:
 
-- 1 bulan setelah roadshow, minimal 30% anak masih aktif pakai AI partner di rumah.
+- 1 bulan setelah program, minimal 30% anak masih aktif pakai AI partner di rumah.
 - Ada 5-10 anak per sekolah yang lanjut tanya-tanya tentang kelas berbayar.
 - Guru sekolah merekomendasikan kami ke sekolah lain tanpa diminta.
 
@@ -96,7 +96,7 @@ Kalau jawabannya "tidak tahu" atau "kedua-duanya", ide itu belum siap dieksekusi
 
 ## Penutup
 
-Roadshow ini bukan tentang NextSkill. Ini tentang anak-anak SMK yang akan lulus 2-3 tahun lagi dan masuk dunia kerja.
+Program ini bukan tentang NextSkill. Ini tentang anak-anak SMK yang akan lulus 2-3 tahun lagi dan masuk dunia kerja.
 
 Mereka akan bekerja bersama AI. Mereka akan di-interview oleh AI. Mereka akan dinilai oleh AI.
 
